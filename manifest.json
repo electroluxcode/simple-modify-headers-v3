@@ -1,0 +1,34 @@
+{
+  "name": "simple-modify-headers-v3",
+  "version": "0.1",
+  "manifest_version": 3,
+  "description": "",
+  "icons": {
+    "16": "data/icons/48.png",
+    "48": "data/icons/48.png",
+    "32": "data/icons/48.png",
+    "128": "data/icons/48.png"
+  },
+  "author": "Electrolux",
+  "permissions": [
+    "declarativeNetRequestFeedback",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_",
+        "enabled": true,
+        "path": "rule.json"
+      }
+    ]
+  },
+ 
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
