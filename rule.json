@@ -17,7 +17,15 @@
                     "header": "Content-Security-Policy",
                     "operation": "remove"
                 },{
-                    "header": "X-Electrolux",
+                    "header": "X-Electrolux-responseHeaders",
+                    "operation": "set",
+                    "value": "Electrolux"
+                }
+    
+            ],
+            "requestHeaders": [
+            {
+                    "header": "X-Electrolux-requestHeaders",
                     "operation": "set",
                     "value": "Electrolux"
                 }
@@ -26,7 +34,22 @@
             
         },
         "condition": {
-            "resourceTypes": ["csp_report", "font", "image", "main_frame", "media", "object", "other", "ping", "script", "stylesheet", "sub_frame", "webbundle", "websocket", "webtransport", "xmlhttprequest"]
+            "resourceTypes": [
+                "csp_report", 
+                "font", 
+                "image", 
+                "main_frame", 
+                "media", 
+                "object", 
+                "other", 
+                "ping", 
+                "script", 
+                "stylesheet", 
+                "sub_frame", 
+                "webbundle", 
+                "websocket", 
+                "webtransport", 
+                "xmlhttprequest"]
           }
     }
 ]

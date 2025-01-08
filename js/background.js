@@ -1,7 +1,7 @@
 console.log("background.js loaded")
 
 console.log(chrome)
-
+	
 // const rules = [
 //     {
 //         "id": 1,
